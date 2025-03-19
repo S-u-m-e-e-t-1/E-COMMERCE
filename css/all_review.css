@@ -1,0 +1,35 @@
+
+.review-section {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+    }
+
+.review-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    height: 200px; 
+}
+
+.slide {
+    display: none; 
+}
+
+.slide.active {
+    display: block;
+}
+
+.review-img {
+    max-width: 100%;
+    height: auto;
+}

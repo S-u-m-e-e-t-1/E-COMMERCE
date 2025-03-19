@@ -1,0 +1,164 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background for better contrast */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: -37px;
+    width: 15vw;
+    height: 5vh;
+    margin-right: 13px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.nav-links a {
+    color: rgb(33, 10, 10);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background 0.3s;
+    position: relative;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: #333;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    min-width: 200px;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-links .login:hover .dropdown {
+    display: block;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    overflow-x: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.category {
+    text-align: center;
+    margin: 0 10px;
+    flex: 1;
+}
+
+.category img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.category span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .categories {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 10px;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .suggestion-list li {
+        font-size: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .category img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .category span {
+        font-size: 12px;
+    }
+}

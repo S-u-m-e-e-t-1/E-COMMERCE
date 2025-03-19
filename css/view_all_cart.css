@@ -1,0 +1,113 @@
+                body {
+                font-family: Arial, sans-serif;
+                background-color: #f8f9fa;
+                color: #333;
+            }
+
+            .cart-container {
+                width: 80%;
+                max-width: 1200px;
+                margin: auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+            h1, h2 {
+                color: #333;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .home-btn {
+                padding: 10px 15px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .home-btn:hover {
+                background-color: #0056b3;
+            }
+
+            .cart-products {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .product-card {
+                width: 250px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .product-image {
+                width: 100%;
+                height: auto;
+                border-radius: 4px;
+            }
+
+            .buttons {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .inline-form {
+                display: inline;
+            }
+
+            .remove-btn, .buy-btn {
+                padding: 8px 12px;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .view-btn {
+                padding: 8px 12px;
+                border: none;
+                border-radius: 4px;
+                background-color: #007bff;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .view-btn:hover {
+                background-color: #0056b3;
+            }
+
+            .remove-btn {
+                background-color: #dc3545;
+            }
+
+            .remove-btn:hover {
+                background-color: #c82333;
+            }
+
+            .buy-btn {
+                background-color: #28a745;
+            }
+
+            .buy-btn:hover {
+                background-color: #218838;
+            }
+
+            .cart-total {
+                margin-top: 20px;
+            }
+
